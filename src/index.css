@@ -30,7 +30,7 @@ main.dark {
 main.light {
   --color-scheme: light;
   --color: black;
-  --bg-color: white;
+  --bg-color: rgb(224, 224, 224);
 }
 :root * {
   --font-family: "Ysabeau", sans-serif;

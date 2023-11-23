@@ -8,7 +8,7 @@ import * as DemoExample from "./ExampleData.json";
 const ThemeProvider = ({ children }: ThemeProviderProps) => {
   const savedEditorContent = localStorage.getItem("draftData");
   const getTheme = localStorage.getItem("theme");
-  const [theme, setTheme] = useState<string>(getTheme || "light");
+  const [theme, setTheme] = useState<string>(getTheme || "dark");
   // @ts-ignore
   const DemoExampleTSIgnored: RawDraftContentState = DemoExample;
   const [mainEditor, setMainEditor] = useState<EditorState>(
