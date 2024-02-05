@@ -56,6 +56,9 @@ const App = () => {
                   return (
                     <button
                       key={selectedDate}
+                      onClick={() => {
+                        console.log(selectedDate, "selected date ");
+                      }}
                       className="selectedDate date w-8 h-8 bg-red-600"
                     >
                       {selectedDate}
@@ -65,6 +68,9 @@ const App = () => {
                 return (
                   <button
                     key={selectedDate}
+                    onClick={() => {
+                      console.log(selectedDate, "selected date ");
+                    }}
                     className="relative date w-8 h-8 bg-blue-400"
                   >
                     {selectedDate}
