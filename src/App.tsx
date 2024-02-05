@@ -52,7 +52,16 @@ const App = () => {
             calendarProps={{
               header(args) {
                 console.log(args, "calendar props");
-                return <button>Kumbhans Header</button>;
+                return (
+                  <button
+                    onClick={() => {
+                      console.log("header netx click");
+                      args.onPreviousMonth();
+                    }}
+                  >
+                    Kumbhans Header
+                  </button>
+                );
               },
               children: (e) => {
                 const selectedDate = new Date(e.date).getDate();
