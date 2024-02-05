@@ -50,6 +50,10 @@ const App = () => {
             style={{ height: "80px", width: "200px" }}
             value={value}
             calendarProps={{
+              header(args) {
+                console.log(args, "calendar props");
+                return <></>;
+              },
               children: (e) => {
                 const selectedDate = new Date(e.date).getDate();
                 if (apiDates.includes(selectedDate)) {
