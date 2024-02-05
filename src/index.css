@@ -59,3 +59,24 @@ pre {
   border-radius: 5px;
   width: max-content;
 }
+
+.cbHbUf,
+.selectedDate {
+  position: relative;
+  /* border: 1px solid red; */
+}
+.cbHbUf::after,
+.selectedDate::after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: black;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+
+.cbHbUf::after {
+  background-color: blue;
+}
