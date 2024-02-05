@@ -52,7 +52,7 @@ const App = () => {
             calendarProps={{
               header(args) {
                 console.log(args, "calendar props");
-                return <button>Header</button>;
+                return <button>Kumbhans Header</button>;
               },
               children: (e) => {
                 const selectedDate = new Date(e.date).getDate();
